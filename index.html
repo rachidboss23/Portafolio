@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="src\assets\css\styles.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+      <!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv\CV Rachid Boss Ibarra.pdf" download="Rachid_Boss_CV.pdf">Descargar CV</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <img class="portfolio-image" src="src/assets/css/img/mimagen.jpg" alt="Imagen de portafolio">
+        </div>
+
+        <!-- Contenedor del texto -->
+        <div class="hero-text">
+            <h1 class="nombre">Rachid Boss Ibarra</h1>
+            <p class="lead">
+                Te doy la bienvenida a mi Portafolio, <br> 
+                Soy Desarrollador Full Stack especializado en JavaScript, React y Node.js. <br>
+                Aquí vas a encontrar algunos de mis proyectos.
+            </p>
+        </div>
+    </section>
+
+<!-- Sección Sobre Mí -->
+<section id="sobre-mi">
+    <h2>Sobre Mí</h2>
+    <p>
+        Hola, mi nombre es Rachid Boss, hace un tiempo terminé el curso de Desarrollo Full Stack JS en Desafío Latam, <br>
+donde aprendí a desarrollar aplicaciones web con JavaScript, React, Node.js y PostgreSQL. <br>
+Me enfoco en el desarrollo de soluciones tecnológicas eficientes y en la mejora continua de mis habilidades. <br>
+Actualmente, busco nuevas oportunidades laborales que me permitan aportar valor y seguir creciendo en el ámbito profesional.
+    </p>
+</section>
+
+<!-- Educación -->  
+<div class="educacion-container">
+    <section id="educacion" class="educacion">
+        <h2>🎓 Educación</h2>
+        <p>
+            Desarrollador Full Stack JavaScript   <br>Desafío Latam (2023 - 2024) <br>
+            Formación en desarrollo web con <br>  JavaScript, React, Node.js y PostgreSQL. <br>
+            Experiencia en creación de aplicaciones dinámicas, API REST y bases de datos relacionales.
+        </p>
+    </section>
+
+<!-- Habilidades -->  
+    <section id="habilidades" class="habilidades">
+        <h2>🛠️ Habilidades</h2>
+        <div class="habilidades-grid">
+            <div class="habilidad"><img src="src/assets/css/img/js.png"><p>JavaScript</p></div>
+            <div class="habilidad"><img src="src/assets/css/img/react.png"><p>React.js</p></div>
+            <div class="habilidad"><img src="src\assets\css\img\nextJS.png"><p>Next.js</p></div>
+            <div class="habilidad"><img src="src/assets/css/img/node.png"></i><p>Node.js</p></div>
+            <div class="habilidad"><img src="src/assets/css/img/ExpressJS.png"></i><p>ExpressJS</p></div>
+            <div class="habilidad"><img src="src/assets/css/img/bootstrap.png"></i><p>Bootstrap</p></div>
+            <div class="habilidad"><img src="src/assets/css/img/SQL.png"></i><p>SQL</p></div>
+            <div class="habilidad"><img src="src\assets\css\img\pgadmin.png"></i><p>pgAdmin</p></div>
+            <div class="habilidad"><img src="src/assets/css/img/git.png" ></i><p>Git</p></div>
+            <div class="habilidad"><img src="src/assets/css/img/github.png" ></i><p>Github</p></div>
+        </div>
+    </section>
+</div>
+
+<!-- Proyectos-->
+    <section id="proyectos" class="container my-5">
+        <h2 class="text-center mb-4">Proyectos</h2>
+        <h4 class="text-center mb-4"> Estos son algunos de mis proyectos destacados </h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-sm project-card">
+                    <img src="src\assets\css\img\Musaikaplace.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Musaikaplace 🏠</h3>
+                        <p class="card-text">Plataforma Full Stack con autenticación, base de datos y gestión de publicaciones.</p>
+                        <a href="https://mskplace-caro-rachid-24-1.onrender.com/" class="btn btn-warning" target="_blank" rel="noopener noreferrer">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-sm project-card">
+                    <img src="src\assets\css\img\pizzeria.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Pizzería 🍕</h3>
+                        <p class="card-text">Sitio web interactivo de pizzería con carrito de compras y gestión de pedidos.</p>
+                        <a href="https://react-ii-pizzeria.vercel.app/" class="btn btn-warning" target="_blank" rel="noopener noreferrer">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-sm project-card">
+                    <img src="src\assets\css\img\contexApi.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Context API 🐉</h3>
+                        <p class="card-text">Aplicación que muestra personajes de Dragon Ball y permite agregarlos a favoritos.</p>
+                        <a href="https://context-api-tan.vercel.app/" class="btn btn-warning" target="_blank" rel="noopener noreferrer">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-sm project-card">
+                    <img src="src\assets\css\img\conversor_monedas_api.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h3 class="card-title">API Conversor de Moneda 💱</h3>
+                        <p class="card-text">Aplicación que consume una API externa para convertir monedas en tiempo real.</p>
+                        <a href="https://ap-is-rachidboss23s-projects.vercel.app/" class="btn btn-warning" target="_blank" rel="noopener noreferrer">Ver más</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white shadow-sm project-card">
+                    <img src="src\assets\css\img\renderizacion_componentes.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Gestión de Colaboradores 👥</h3>
+                        <p class="card-text">Sistema en React para agregar, buscar y filtrar colaboradores dinámicamente.</p>
+                        <a href="https://renderizaciondecomponentes.vercel.app/" class="btn btn-warning" target="_blank" rel="noopener noreferrer">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Certificados -->
+<section id="certificados" class="container text-center my-5">
+    <h2 class="mb-4">Certificados</h2>
+    <h4>Aquí están algunos de mis certificados obtenidos:</h4>
+    
+    <div class="certificados-container position-relative">
+        <button class="scroll-btn left" id="prevCert"><i class="bi bi-chevron-left"></i></button>
+        <div class="certificados-wrapper d-flex">
+            <img src="src/assets/css/img/certificacion-aprobacion-de-carrera-nuevo-proyecto-final-g56-16470(3).png" 
+                class="img-fluid certificado-item shadow rounded certificado-card" 
+                alt="Certificado Aprobacion FullStack">
+            <img src="src/assets/css/img/certificado-aprobacion-de-modulo-nuevo-backend-con-node-y-express-g56-16470(3).png" 
+                class="img-fluid certificado-item shadow rounded certificado-card" 
+                alt="Certificado Backend">
+            <img src="src/assets/css/img/certificado-aprobacion-de-modulo-nuevo-javascript-para-la-web-g56-16470(2).png" 
+                class="img-fluid certificado-item shadow rounded certificado-card" 
+                alt="Certificado JavaScript">
+            <img src="src/assets/css/img/certificado-aprobacion-de-modulo-nuevo-react-i-g56-16470(3).png" 
+                class="img-fluid certificado-item shadow rounded certificado-card" 
+                alt="Certificado React I">
+            <img src="src/assets/css/img/certificado-aprobacion-de-modulo-nuevo-react-ii-g56-16470(3).png" 
+                class="img-fluid certificado-item shadow rounded certificado-card" 
+                alt="Certificado React II">
+            <img src="src/assets/css/img/certificado-aprobacion-de-modulo-nuevo-sql-g56-16470(3).png" 
+                class="img-fluid certificado-item shadow rounded certificado-card" 
+                alt="Certificado SQL">
+        </div>
+        <button class="scroll-btn right" id="nextCert"><i class="bi bi-chevron-right"></i></button>
+    </div>
+</section>
+
+<!-- Contacto -->  
+<section id="contacto">
+    <h2 class="text-center">Contacto</h2>
+    <p class="text-center text-white">Creemos un nuevo proyecto</p>
+
+    <div class="w-50 mx-auto">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rachidboss027@gmail.com&su=Contacto%20desde%20tu%20portafolio&body=Hola%20Rachid,%20quiero%20hablar%20contigo%20sobre..." 
+        target="_blank" class="btn btn-primary w-100">📩 Envíame un Correo</a>
+     
+    </div>
+</section>
+
+<!-- Redes Sociales -->
+<div class="mt-5">
+    <h3 class="text-center mb-4">Sígueme en mis redes</h3>
+    <div class="d-flex justify-content-center gap-4">
+        <a href="https://www.linkedin.com/in/rachid-boss-ibarra/" target="_blank" class="icono">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/rachidboss23" target="_blank" class="icono">
+            <i class="bi bi-github"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/56936745644?text=Hola%20Rachid,%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar%20contigo!" 
+   target="_blank" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- JavaScript -->
+<script src="src/index.js"></script> 
+</body>
+</html>

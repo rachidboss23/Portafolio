@@ -1,0 +1,561 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.mi-nombre {
+    font-family: "Monoton", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    /* font-size: 8rem; */
+    font-style: normal;
+    background-image: var(--nombre-fondo);
+    -webkit-background-clip: text;
+    background-clip: '';
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+
+/* Barra de navegación */
+header {
+    background: linear-gradient(135deg, #343a40, #1e1e1e);
+    color: white;
+    text-align: center;
+}
+
+header header {
+    margin: 0;
+    padding: 0;
+    height: auto; 
+}
+
+.portfolio-image{
+    width:400px;
+    height:450px; 
+    margin-bottom: 70px;
+        border: 5px solid white; /* Grosor y color del borde */
+        border-radius: 15px; /* Redondear esquinas */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    
+    
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Sección Hero */
+.hero-section {
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+}
+
+.hero-image img {
+    width: 25vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex: 1; 
+    background-color: #f0efeff2; 
+    padding: 50px; 
+    margin-bottom: 70px;
+}
+
+/* Fuente y animación */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root {
+    --nombre-fondo: linear-gradient(45deg, #ff5e00, #009dff, #00ff1e, #007bff, #4b0082, #f57df5);
+}
+
+.hero-text h1 {
+    font-family: "Monoton", serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3.6rem;
+    background-image: var(--nombre-fondo);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+
+/* Animación de fondo */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-text p {
+    color: #060606;
+}
+
+/* Sección Sobre Mí */
+#sobre-mi {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+#sobre-mi:hover {
+    transform: scale(1.02);
+}
+
+#sobre-mi h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #007bff; /* Color primario */
+}
+
+#sobre-mi p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Sección Educación y Habilidades */
+.educacion-container {
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 80%;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.educacion, .habilidades {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.educacion:hover, .habilidades:hover {
+    transform: scale(1.05);
+}
+
+.educacion h2, .habilidades h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;/* Color secundario */
+}
+
+/* habilidades.css */
+.habilidades-grid {
+    display: grid;
+    background-color: #f8f9fae4;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Tamaño ajustado */
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.habilidad {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.habilidad img {
+    width: 50px; /* Tamaño reducido para mejor ajuste */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.habilidad p {
+    margin-top: 5px;
+    font-size: 14px; /* Texto más pequeño */
+    font-weight: bold;
+    color: #333;
+}
+
+.habilidad:hover {
+    transform: scale(1.1);
+}
+
+.habilidades{
+    background-color: #f8f9fa;
+}
+
+
+
+
+/* Sección Proyectos - Mejorado */
+.col-md-4 {
+    margin-bottom: 30px;
+}
+
+#proyectos .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#proyectos .card img {
+    border-radius: 15px 15px 0 0;
+}
+
+#proyectos h2 {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: slideInBounce 1.2s ease forwards;
+    background: linear-gradient(90deg, #00bcd4, #ff4081);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(0, 188, 212, 0.4));
+  }
+  
+  #proyectos h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00bcd4, #ff4081, #00bcd4);
+    margin: 10px auto 0;
+    border-radius: 2px;
+    animation: underlineExpand 1.5s ease forwards 0.5s;
+    opacity: 0;
+animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideInBounce {
+    0% { opacity: 0; transform: translateY(50px); }
+    60% { opacity: 1; transform: translateY(-20px); }
+    80% { transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); } /* Fija opacidad */
+  }
+  
+  
+  @keyframes underlineExpand {
+    from { width: 0; }
+    to { width: 150px; }
+  }
+  
+
+/* Sección Contacto */
+#contacto {
+    background-color: #212529;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#contacto h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form .form-control {
+    border-radius: 8px;
+}
+
+/* Corrección de espaciado en los campos del formulario */
+.mb-3 {
+    margin-bottom: 1rem !important;
+    display: block;
+}
+
+#mensaje {
+    margin-top: 8px; /* Espaciado entre el campo de texto y el botón */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Redes Sociales */
+#contacto .fs-3 {
+    transition: transform 0.2s ease-in-out;
+}
+
+#contacto .fs-3:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+/* Estilos para la sección de certificados con scroll */
+.certificados-container {
+    position: relative;
+    max-width: 100%;
+    overflow-y: hidden;
+}
+
+.certificados-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+}
+
+.certificado-item {
+    width: 300px; 
+    height: auto;
+    flex-shrink: 0;
+}
+
+.certificado-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.certificado-card:hover {
+    transform: scale(1.05);
+}
+
+#certificados h2 {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: slideInBounce 1.2s ease forwards;
+    background: linear-gradient(90deg, #00bcd4, #ff4081);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(0, 188, 212, 0.4));
+  }
+  
+  #certificados h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00bcd4, #ff4081, #00bcd4);
+    margin: 10px auto 0;
+    border-radius: 2px;
+    animation: underlineExpand 1.5s ease forwards 0.5s;
+    opacity: 0;
+animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideInBounce {
+    0% { opacity: 0; transform: translateY(50px); }
+    60% { opacity: 1; transform: translateY(-20px); }
+    80% { transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); } /* Fija opacidad */
+  }
+  
+  
+  @keyframes underlineExpand {
+    from { width: 0; }
+    to { width: 150px; }
+  }
+  
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(187, 183, 183, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+/* Iconos de redes sociales con efecto de agrandado */
+.icono {
+    font-size: 2rem;
+    color: #31bbf2; /* Celeste predeterminado */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.icono:hover {
+    color: #ffffff; /* Icono blanco al hacer hover */
+    text-shadow: 
+        0 0 6px rgba(255, 255, 255, 0.8), /* Brillo blanco */
+        0 0 12px rgba(49, 187, 242, 0.9); /* Contorno celeste */
+}
+
+
+/* Botón flotante de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar */
+#navbar {
+    position: absolute; /* Se queda en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 70px; /* Ajusta para que el contenido no se esconda debajo de la navbar */
+    font-family: 'Poppins', sans-serif;
+}
+
+#mt-5{
+    #proyectos h2 {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: slideInBounce 1.2s ease forwards;
+    background: linear-gradient(90deg, #00bcd4, #ff4081);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(0, 188, 212, 0.4));
+  }
+  
+  #proyectos h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00bcd4, #ff4081, #00bcd4);
+    margin: 10px auto 0;
+    border-radius: 2px;
+    animation: underlineExpand 1.5s ease forwards 0.5s;
+    opacity: 0;
+animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideInBounce {
+    0% { opacity: 0; transform: translateY(50px); }
+    60% { opacity: 1; transform: translateY(-20px); }
+    80% { transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); } /* Fija opacidad */
+  }
+  
+  
+  @keyframes underlineExpand {
+    from { width: 0; }
+    to { width: 150px; }
+  }
+  
+}
+
+
+/* RESPONSIVIDAD */
+/* Para pantallas menores a 768px (Móviles) */
+@media (max-width: 768px) {
+    .hero-text {
+        padding: 30px;
+    }
+
+    .certificado-item {
+        width: 90%;
+    }
+
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Para pantallas menores a 480px (Teléfonos pequeños) */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .habilidad i {
+        font-size: 30px;
+    }
+}
