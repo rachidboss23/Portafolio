@@ -5,7 +5,7 @@ body {
     color: #333;
 }
 
-.mi-nombre {
+.hero-text h1 {
     font-family: "Monoton", serif;
     text-transform: uppercase;
     font-weight: 400;
@@ -17,7 +17,9 @@ body {
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
     animation: gradient 8s ease-in-out infinite;
+    margin-bottom: 0.1rem; /* o menos según necesites */
 }
+
 
 /* Barra de navegación */
 header {
