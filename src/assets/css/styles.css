@@ -532,8 +532,8 @@ animation-fill-mode: forwards;
 
 /* RESPONSIVIDAD */
 
-/* Para pantallas menores a 768px (Móviles y Xiaomi Redmi Note 14) */
-@media (max-width: 768px) {
+/* Para pantallas menores a 820px (Incluyendo Xiaomi Redmi Note 13 5G) */
+@media (max-width: 820px) {
     .hero-section {
         flex-direction: column; /* Imagen arriba, texto abajo */
         align-items: center;
