@@ -534,14 +534,21 @@ animation-fill-mode: forwards;
 
 /* Para pantallas menores a 768px (Móviles y Xiaomi Redmi Note 14) */
 @media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Imagen arriba, texto abajo */
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
     .hero-text {
         padding: 20px;
     }
 
     .portfolio-image {
-        width: 100%;
+        width: 80%; /* Ajustar tamaño en móviles */
         height: auto;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .certificado-item {
@@ -554,8 +561,8 @@ animation-fill-mode: forwards;
     }
 
     .habilidades-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(3, 1fr); /* Organizar en filas de 3 */
+        gap: 15px;
     }
 
     .whatsapp-btn {
@@ -587,7 +594,7 @@ animation-fill-mode: forwards;
     }
 
     .habilidades-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* Mantener al menos 2 por fila */
     }
 
     .habilidad i, .habilidad img {
