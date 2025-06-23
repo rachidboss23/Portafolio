@@ -181,13 +181,13 @@ header header {
 /* habilidades.css */
 .habilidades-grid {
     display: grid;
-    background-color: #111111;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Tamaño ajustado */
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
+
 
 .habilidad {
     text-align: center;
