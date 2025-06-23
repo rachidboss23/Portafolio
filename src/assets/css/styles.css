@@ -1,24 +1,25 @@
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #0a0a0a;
     color: #333;
 }
 
 .hero-text h1 {
     font-family: "Monoton", serif;
     text-transform: uppercase;
-    font-weight: 400;
-    /* font-size: 8rem; */
+    font-weight: 900;
     font-style: normal;
+    font-size: 3.6rem;
     background-image: var(--nombre-fondo);
     -webkit-background-clip: text;
-    background-clip: '';
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
     animation: gradient 8s ease-in-out infinite;
-    margin-bottom: 0.1rem; /* o menos según necesites */
+    margin-bottom: 0.1rem;
 }
+
 
 
 /* Barra de navegación */
@@ -86,7 +87,7 @@ header header {
 }
 
 .hero-text h1 {
-    font-family: "Monoton", serif;
+    
     text-transform: uppercase;
     font-weight: 900;
     font-style: normal;
@@ -115,7 +116,7 @@ header header {
     max-width: 80%;
     margin: 50px auto;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.9);
+    background: #111111;
     border-radius: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -139,23 +140,25 @@ header header {
 #sobre-mi p {
     font-size: 18px;
     line-height: 1.6;
-    color: #444;
+    color: #ddd;
 }
 
 /* Sección Educación y Habilidades */
 .educacion-container {
     display: flex;
-    background-color: #f2f2f2;
+    background-color: #0a0a0a;
+    font-family: 'Poppins', sans-serif;
     justify-content: center;
     gap: 40px;
     margin: 50px auto;
     max-width: 80%;
+     color: #ddd;
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .educacion, .habilidades {
     flex: 1;
-    background: rgba(255, 255, 255, 0.9);
+    background: #111111;
     padding: 30px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -178,7 +181,7 @@ header header {
 /* habilidades.css */
 .habilidades-grid {
     display: grid;
-    background-color: #f8f9fae4;
+    background-color: #111111;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Tamaño ajustado */
     gap: 15px;
     justify-content: center;
@@ -192,29 +195,30 @@ header header {
     
 }
 
-.habilidad img {
-    width: 50px; /* Tamaño reducido para mejor ajuste */
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+/* Aquí se reemplaza el img por iconos con devicon */
+.habilidad i {
+    font-size: 50px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.habilidad i:hover {
+    color: #00ffd5; /* neon cyan para efecto hover */
+    transform: scale(1.2);
 }
 
 .habilidad p {
-    margin-top: 5px;
-    font-size: 14px; /* Texto más pequeño */
+    margin-top: 8px;
+    font-size: 14px;
     font-weight: bold;
-    color: #333;
+    color: white; /* texto blanco para buen contraste */
 }
 
 .habilidad:hover {
     transform: scale(1.1);
 }
-
-.habilidades{
-    background-color: #f8f9fa;
-}
-
-
-
 
 /* Sección Proyectos - Mejorado */
 .col-md-4 {
@@ -284,7 +288,7 @@ animation-fill-mode: forwards;
 /* Sección Contacto */
 #contacto {
     background-color: #212529;
-    color: white;
+    color:#ddd;
     padding: 50px 20px;
     text-align: center;
     border-radius: 10px;
@@ -317,7 +321,7 @@ form .form-control {
 /* Botones */
 .btn-primary {
     background-color: #007bff;
-    color: white;
+    color:#ddd;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -433,7 +437,7 @@ animation-fill-mode: forwards;
 
 /* Iconos de redes sociales con efecto de agrandado */
 .icono {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #31bbf2; /* Celeste predeterminado */
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
     padding: 10px;
@@ -534,14 +538,21 @@ animation-fill-mode: forwards;
 
 /* Para pantallas menores a 768px (Móviles y Xiaomi Redmi Note 14) */
 @media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Imagen arriba, texto abajo */
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
     .hero-text {
         padding: 20px;
     }
 
     .portfolio-image {
-        width: 100%;
+        width: 80%; /* Ajustar tamaño en móviles */
         height: auto;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .certificado-item {
@@ -554,8 +565,8 @@ animation-fill-mode: forwards;
     }
 
     .habilidades-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(3, 1fr); /* Organizar en filas de 3 */
+        gap: 15px;
     }
 
     .whatsapp-btn {
@@ -587,7 +598,7 @@ animation-fill-mode: forwards;
     }
 
     .habilidades-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* Mantener al menos 2 por fila */
     }
 
     .habilidad i, .habilidad img {
@@ -613,4 +624,9 @@ animation-fill-mode: forwards;
         padding: 8px 16px;
         font-size: 1rem;
     }
+}
+
+.subtitulo {
+    color: #ccc; /* Gris claro */
+    font-weight: normal;
 }
