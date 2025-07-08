@@ -1,18 +1,17 @@
-// src/index.js - 
-
 document.addEventListener('DOMContentLoaded', () => {
   const certificadosWrapper = document.querySelector('.certificados-wrapper');
 
   const handleScroll = () => {
-    if (certificadosWrapper) {
-      const rect = certificadosWrapper.getBoundingClientRect();
+    const wrapper = document.querySelector('.certificados-wrapper');
+    if (wrapper) {
+      const rect = wrapper.getBoundingClientRect();
       console.log('Certificados rect:', rect);
+    } else {
+      console.warn('certificadosWrapper NO existe (scroll ignorado)');
     }
   };
 
-  if (certificadosWrapper) {
-    document.addEventListener('scroll', handleScroll);
-  }
+  document.addEventListener('scroll', handleScroll);
 
   const prevBtn = document.getElementById('prevCert');
   const nextBtn = document.getElementById('nextCert');
