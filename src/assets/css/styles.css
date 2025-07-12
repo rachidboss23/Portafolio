@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
@@ -82,6 +79,8 @@ header header {
     margin-bottom: 70px;
 }
 
+/* Fuente y animación */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 :root {
     --nombre-fondo: linear-gradient(45deg, #ff5e00, #009dff, #00ff1e, #007bff, #4b0082, #f57df5);
@@ -631,3 +630,5 @@ animation-fill-mode: forwards;
     color: #ccc; /* Gris claro */
     font-weight: normal;
 }
+
+
